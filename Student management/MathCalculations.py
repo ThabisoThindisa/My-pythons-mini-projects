@@ -1,7 +1,5 @@
 
 class Calculator:
-
-    # Calculate the average in the list
     def calculate_Avarage(self, *numbers):
         total = 0
         for current_number in numbers:
