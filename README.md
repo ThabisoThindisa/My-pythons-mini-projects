@@ -2,4 +2,4 @@
 each programs is store its own file
 
 ## To run press: "py app.py"
-in the idevitual project files type "app.py" 
+in the individual project files type "app.py" 
