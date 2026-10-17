@@ -1,6 +1,6 @@
-from GUI import Display
-from MathCalculations import Calculator
-from Students import StudentClass
+from HandleFunctions.GUI import Display
+from HandleFunctions.MathCalculations import Calculator
+from HandleFunctions.Students import StudentClass
 from tkinter import messagebox
 
 # How the user interface layout
@@ -186,60 +186,60 @@ Button_Display = app.createButton("Get all students.", Display_All_student)
 
 # ------------------The display of the user interface----------
 # row 1
-label_name.grid(row=1, column=0, padx=10, pady=10)
-textBox_name.grid(row=1, column=1, padx=10, pady=10)
-label_Average.grid(row=1, column=2, padx=10, pady=20)
-textBox_Average.grid(row=1, column=3, padx=10, pady=20)
+label_name.grid(row=1, column=0, padx=5, pady=10)
+textBox_name.grid(row=1, column=1, padx=5, pady=10)
+label_Average.grid(row=1, column=2, padx=5, pady=20)
+textBox_Average.grid(row=1, column=3, padx=5, pady=20)
 button_Average = app.createButton(
     "Calculate average", calculate_average)
-button_Average.grid(row=1, column=4, padx=10, pady=20)
+button_Average.grid(row=1, column=4, padx=5, pady=20)
 
 # row 2
-label_Surname.grid(row=2, column=0, padx=10, pady=10)
-textBox_surname.grid(row=2, column=1, padx=10, pady=10)
-label_Total.grid(row=2, column=2, padx=10, pady=20)
-textBox_Total.grid(row=2, column=3, padx=10, pady=20)
+label_Surname.grid(row=2, column=0, padx=5, pady=10)
+textBox_surname.grid(row=2, column=1, padx=5, pady=10)
+label_Total.grid(row=2, column=2, padx=5, pady=20)
+textBox_Total.grid(row=2, column=3, padx=5, pady=20)
 button_Total = app.createButton(
     "Calculate total", calculate_total)
-button_Total.grid(row=2, column=4, padx=10, pady=20)
+button_Total.grid(row=2, column=4, padx=5, pady=20)
 
 # row 3
-label_ID.grid(row=3, column=0, padx=10, pady=10)
-textBox_ID.grid(row=3, column=1, padx=10, pady=0)
-label_high.grid(row=3, column=2, padx=10, pady=20)
-textBox_Highest.grid(row=3, column=3, padx=10, pady=20)
+label_ID.grid(row=3, column=0, padx=5, pady=10)
+textBox_ID.grid(row=3, column=1, padx=5, pady=0)
+label_high.grid(row=3, column=2, padx=5, pady=20)
+textBox_Highest.grid(row=3, column=3, padx=5, pady=20)
 button_highest = app.createButton(
     "Find highest", calculate_highest)
-button_highest.grid(row=3, column=4, padx=10, pady=20)
+button_highest.grid(row=3, column=4, padx=5, pady=20)
 
 # row 4
-label_Marks.grid(row=4, column=1, padx=20, pady=0)
+label_Marks.grid(row=4, column=1, padx=0, pady=0)
 
 # row 5
-label_Marks_English.grid(row=5, column=0, padx=5, pady=0)
+label_Marks_English.grid(row=5, column=0, padx=2.5, pady=0)
 textBox_english.grid(row=5, column=1, padx=0, pady=5)
-label_Grade_English.grid(row=5, column=2, padx=20, pady=20)
-textBox_english_grade.grid(row=5, column=3, padx=20, pady=20)
+label_Grade_English.grid(row=5, column=2, padx=0, pady=20)
+textBox_english_grade.grid(row=5, column=3, padx=0, pady=20)
 
 # row 6
-label_Marks_Maths.grid(row=6, column=0, padx=5, pady=0)
+label_Marks_Maths.grid(row=6, column=0, padx=2.5, pady=0)
 textBox_maths.grid(row=6, column=1, padx=0, pady=5)
-label_Grade_Maths.grid(row=6, column=2, padx=20, pady=20)
-textBox_maths_grade.grid(row=6, column=3, padx=20, pady=20)
+label_Grade_Maths.grid(row=6, column=2, padx=0, pady=20)
+textBox_maths_grade.grid(row=6, column=3, padx=0, pady=20)
 
 # row 7
-label_Marks_Science.grid(row=7, column=0, padx=5, pady=3)
+label_Marks_Science.grid(row=7, column=0, padx=2.5, pady=3)
 textBox_science.grid(row=7, column=1, padx=0, pady=3)
-label_Grade_Science.grid(row=7, column=2, padx=20, pady=20)
-textBox_science_grade.grid(row=7, column=3, padx=20, pady=20)
+label_Grade_Science.grid(row=7, column=2, padx=0, pady=20)
+textBox_science_grade.grid(row=7, column=3, padx=0, pady=20)
 
 # row 8
-button_Enter.grid(row=8, column=1, padx=20, pady=3)
-button_Grades.grid(row=8, column=3, padx=20, pady=20)
+button_Enter.grid(row=8, column=1, padx=0, pady=3)
+button_Grades.grid(row=8, column=3, padx=0, pady=20)
 
 # row 9
-textBox_Display_students.grid(row=9, column=0, padx=5, pady=5)
-Button_Display.grid(row=9, column=1, padx=5, pady=5)
+textBox_Display_students.grid(row=9, column=0, padx=2.5, pady=5)
+Button_Display.grid(row=9, column=1, padx=2.5, pady=5)
 
 app.grid_columnconfigure(0, weight=1)
 
