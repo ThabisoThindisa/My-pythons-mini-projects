@@ -6,7 +6,7 @@ from tkinter import messagebox
 # How the user interface layout
 app = Display()
 app.title("Student Portal")
-app.geometry("1700x990")
+app.geometry("1500x990")
 students = StudentClass()
 calculator = Calculator()
 
@@ -96,8 +96,13 @@ def Display_All_student():
             student_information += "ID: " + currentStudent["ID"] + "\n"
 
             # Add a newline after each student's information
-            student_information += "Subjects: " + \
-                str(currentStudent["Subjects"]) + "\n\n"
+            student_information += "Subjects: "+"\n"
+            student_information += "English: " + \
+                str(currentStudent["Subjects"]["english"]) + "\n"
+            student_information += "science: " + \
+                str(currentStudent["Subjects"]["science"]) + "\n"
+            student_information += "mathematics: " + \
+                str(currentStudent["Subjects"]["mathematics"]) + "\n\n"
 
             # Insert at the end of the TextBox
             textBox_Display_students.insert("end", student_information)
